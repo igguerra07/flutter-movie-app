@@ -1,7 +1,5 @@
 import 'package:flutter_test/flutter_test.dart';
 
 void main() {
-  testWidgets('movies page ...', (tester) async {
-    // TODO: Implement test
-  });
+  testWidgets('movies page ...', (tester) async {});
 }

@@ -4,7 +4,6 @@ import 'package:mocktail/mocktail.dart';
 import 'package:flutter_test/flutter_test.dart';
 
 import 'package:movie_app/src/infra/api/api.dart';
-import 'package:movie_app/src/app/di/di.dart';
 import 'package:movie_app/src/app/features/movies/movies.dart';
 
 import '../../../../../../fixtures/fixtures_reader.dart';
