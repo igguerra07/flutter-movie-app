@@ -1,0 +1,53 @@
+name: movie_app
+description: A new Flutter project.
+
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=2.19.5 <3.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # Functional programming (Either)
+  dartz: ^0.10.1
+  
+  # State Management
+  flutter_bloc: ^8.1.2
+
+  # Objects equality
+  equatable: ^2.0.5
+
+  # Network
+  dio: ^5.1.1
+
+  # Cache
+  shared_preferences: ^2.1.0
+
+  # Date
+  intl: ^0.18.0
+
+  # DI
+  get_it: ^7.2.0
+  injectable: ^2.1.1
+
+  # UI
+  cupertino_icons: ^1.0.2
+  cached_network_image: ^3.2.3
+  youtube_player_flutter: ^8.1.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  mocktail: ^0.3.0
+  bloc_test: ^9.1.1
+
+  flutter_lints: ^2.0.0
+  build_runner: ^2.3.3
+  injectable_generator: ^2.1.5
+
+flutter:
+  uses-material-design: true
