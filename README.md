@@ -1,16 +1,35 @@
-# movie_app
+# MovieApp
 
-A new Flutter project.
+MovieApp is in Flutter Version *3.9.2*
 
-## Getting Started
+## Running the app
 
-This project is a starting point for a Flutter application.
+To get project dependencies:
 
-A few resources to get you started if this is your first Flutter project:
+```bash
+flutter pub get
+```
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+To generate files for DI (get_it):
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+```bash
+flutter pub run build_runner build --delete-confliting-outputs
+```
+To run app:
+
+```bash
+flutter run
+```
+
+### TO DO
+
+- [ ] Infine pagination (Home)
+- [ ] Offline first
+- [ ] l10n
+- [ ] Theme
+- [ ] Widget's tests
+- [ ] Improvements UI responsive
+- [ ] Improvements error handler
+- [ ] Improvements UI feedbacks
+- [ ] Analytics (Trackers)
+- [ ] CI/CD
