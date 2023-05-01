@@ -11,6 +11,7 @@ abstract class CastModule {
   @lazySingleton
   CastRemoteDataSource get castRemoteData => CastRemoteDataSourceImpl(
         apiClient: getIt(),
+        resource: getIt(instanceName: "resource"),
       );
 
   @lazySingleton

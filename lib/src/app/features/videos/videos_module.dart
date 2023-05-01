@@ -11,6 +11,7 @@ abstract class VideosModule {
   @lazySingleton
   VideosRemoteDataSource get videosRemoteDataSource =>
       VideosRemoteDataSourceImpl(
+        resource: getIt(instanceName: "resource"),
         apiClient: getIt(),
       );
 
