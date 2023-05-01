@@ -4,21 +4,24 @@ import '../../models/movies_resource_model.dart';
 import 'movies_remote_data.dart';
 
 class MoviesRemoteDataSourceImpl implements MoviesRemoteDataSource {
+  late final String _resource;
   late final ApiClient _apiClient;
 
   MoviesRemoteDataSourceImpl({
+    required String resource,
     required ApiClient apiClient,
   }) {
+    _resource = resource;
     _apiClient = apiClient;
   }
 
   @override
   Future<MoviesResourceModel> getTrending({
-    String mediaType = "movie",
+    String mediaType = "tv",
     String timeWindow = "week",
   }) async {
     final trendingPath = "trending/:media_type:/:time_window:"
-        .replaceAll(":media_type:", mediaType)
+        .replaceAll(":media_type:", _resource)
         .replaceAll(":time_window:", timeWindow);
 
     final response = await _apiClient.get(path: trendingPath);
@@ -32,7 +35,7 @@ class MoviesRemoteDataSourceImpl implements MoviesRemoteDataSource {
   Future<MoviesResourceModel> search({
     required String query,
   }) async {
-    const searchMovieResource = "/search/movie";
+    final searchMovieResource = "/search/$_resource";
     final queryParams = {"query": query};
 
     final response = await _apiClient.get(
