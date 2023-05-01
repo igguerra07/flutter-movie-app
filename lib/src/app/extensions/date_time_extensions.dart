@@ -20,8 +20,12 @@ extension DateStringExtensions on String {
   String toDateFormat({
     DateFormatPatterns pattern = DateFormatPatterns.ddMMyy,
   }) {
-    final dateTime = DateTime.parse(this);
-    final date = DateFormat(pattern.value).format(dateTime);
-    return date;
+    try {
+      final dateTime = DateTime.parse(this);
+      final date = DateFormat(pattern.value).format(dateTime);
+      return date;
+    } catch (e) {
+      return "Invalid date";
+    }
   }
 }
