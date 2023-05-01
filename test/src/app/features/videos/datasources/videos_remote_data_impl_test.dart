@@ -18,6 +18,7 @@ void main() {
   setUp(() {
     apiClientMock = ApiClientMock();
     videosRemoteDataSource = VideosRemoteDataSourceImpl(
+      resource: "",
       apiClient: apiClientMock,
     );
   });

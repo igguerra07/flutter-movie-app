@@ -18,6 +18,7 @@ void main() {
   setUp(() {
     apiClientMock = ApiClientMock();
     castRemoteDataSource = CastRemoteDataSourceImpl(
+      resource: "",
       apiClient: apiClientMock,
     );
   });

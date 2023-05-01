@@ -13,7 +13,7 @@ import 'usecases/usecases.dart';
 abstract class MoviesModule {
   @lazySingleton
   MoviesRemoteDataSource get remote => MoviesRemoteDataSourceImpl(
-     resource: getIt(instanceName: "resource"),
+        resource: getIt(instanceName: "resource"),
         apiClient: getIt(),
       );
 
