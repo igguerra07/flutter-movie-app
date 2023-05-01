@@ -27,9 +27,7 @@ class MoviesResourceModel {
       page: map['page']?.toInt() ?? 0,
       totalPages: map['total_pages']?.toInt() ?? 0,
       totalResults: map['total_results']?.toInt() ?? 0,
-      results: List<MovieModel>.from(
-        map['results']?.map((x) => MovieModel.fromJson(x)),
-      ),
+      results: MovieModel.fromJsonList(map['results']),
     );
   }
 }
