@@ -35,7 +35,7 @@ class MovieModel {
   factory MovieModel.fromJson(Map<String, dynamic> json) {
     return MovieModel(
       id: json['id']?.toInt() ?? 0,
-      title: json['title'] ?? '',
+      title: json['title'] ?? json['name'] ?? '',
       overview: json['overview'] ?? '',
       posterPath: json['poster_path'] ?? '',
       popularity: json['popularity']?.toDouble() ?? 0.0,
