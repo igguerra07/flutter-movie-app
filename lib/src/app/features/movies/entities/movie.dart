@@ -1,3 +1,4 @@
+// coverage:ignore-file
 import 'package:equatable/equatable.dart';
 
 import 'package:movie_app/src/app/extensions/date_time_extensions.dart';

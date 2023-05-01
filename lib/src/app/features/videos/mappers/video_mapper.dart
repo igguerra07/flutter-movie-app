@@ -1,3 +1,4 @@
+// coverage:ignore-file
 import '../entities/video.dart';
 import '../models/video_model.dart';
 

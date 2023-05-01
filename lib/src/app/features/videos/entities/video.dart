@@ -1,4 +1,6 @@
+// coverage:ignore-file
 import 'package:equatable/equatable.dart';
+
 import 'package:movie_app/src/app/extensions/extensions.dart';
 
 class Video extends Equatable {

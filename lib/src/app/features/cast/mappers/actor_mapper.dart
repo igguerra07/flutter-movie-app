@@ -1,3 +1,4 @@
+// coverage:ignore-file
 import '../entities/actor.dart';
 import '../models/actor_model.dart';
 
