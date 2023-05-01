@@ -57,7 +57,8 @@ android {
             dimension "app"
             resValue "string", "app_name", "Series App"
             manifestPlaceholders = [
-                appIcon: "@mipmap/ic_launcher_series"
+                appIcon: "@mipmap/ic_launcher_series",
+                splash: "@style/LaunchSeriesTheme",
             ]
             applicationIdSuffix ".series"
         }
@@ -65,7 +66,8 @@ android {
             dimension "app"
             resValue "string", "app_name", "Movie App"
             manifestPlaceholders = [
-                appIcon: "@mipmap/ic_launcher_movies"
+                appIcon: "@mipmap/ic_launcher_movies",
+                splash: "@style/LaunchMoviesTheme",
             ]
             applicationIdSuffix ".movies"
         }
