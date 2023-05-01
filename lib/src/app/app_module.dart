@@ -10,6 +10,14 @@ import 'di/injector.dart';
 
 @module
 abstract class AppModule {
+  @dev
+  @Named("resource")
+  String get series => "tv";
+
+  @prod
+  @Named("resource")
+  String get movies => "movie";
+
   @preResolve
   Future<SharedPreferences> get sharedPreferences =>
       SharedPreferences.getInstance();
